@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoToken App</title>
+</head>
+<body>
+<h1>InnoToken App</h1>
+
+<div>
+    <h2>Token information</h2>
+    <p>Name: <span id="tokenName"></span></p>
+    <p>Symbol: <span id="tokenSymbol"></span></p>
+    <p>Total Supply: <span id="tokenSupply"></span></p>
+</div>
+
+<div>
+    <h2>Transfer tokens</h2>
+    <input type="text" id="recipientAddress" placeholder="Recipient Address">
+    <input type="number" id="transferAmount" placeholder="Amount">
+    <button onclick="transferTokens()">Transfer</button>
+</div>
+
+<div>
+    <h2>Token holders</h2>
+    <ul id="tokenHolders"></ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.5/dist/web3.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
